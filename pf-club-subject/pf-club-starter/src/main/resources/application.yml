@@ -1,0 +1,30 @@
+server:
+  port: 20021
+spring:
+  datasource:
+    username: root
+    password: ZlsJHtp90zzK0slAMlJ+XXJsdLGRyWHKMzSaH7PFfZw5QJOynDKWmQ9MgRE4bIz3rNdPvIHVrXn6RJEoKkhndg==
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/pf-club?serverTimezone=Asia/Shanghai&useUnicode=true&caracterEncoding=utf8&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      initial-size: 20
+      min-idle: 20
+      connectionProperties: config.decrypt=true;config.decrypt.key=${publicKey};
+      max-active: 100
+      max-wait: 60000
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: root
+        login-password: root
+      filter:
+        stat:
+          enabled: true
+          slow-sql-millis: 2000
+          log-slow-sql: true
+        wall:
+          enabled: true
+        config:
+          enabled: true
+publicKey: MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAMbRWCCOdbAxht/C20+plIcGtMG13bvEhZqD1b8C/+Ms6WawUhtdqQDE/hmITxgmO3+VqE4GzFAREgT6XGnPhiECAwEAAQ==
