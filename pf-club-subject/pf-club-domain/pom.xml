@@ -11,5 +11,13 @@
 
     <artifactId>pf-club-domain</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.peng</groupId>
+            <artifactId>pf-club-infra</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

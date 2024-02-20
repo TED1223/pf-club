@@ -24,6 +24,11 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>com.peng</groupId>
+            <artifactId>pf-club-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <!-- jdbc -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
